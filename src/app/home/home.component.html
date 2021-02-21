@@ -1,0 +1,12 @@
+<h3>JSON Web Test</h3>
+
+
+<form (ngSubmit)="signIn()">
+	Username: <input type="text" [(ngModel)]="user.username" name="username"><br/>
+	Password: <input type="password" [(ngModel)]="user.password" name="password"><br/>
+	<!-- Get a token -->
+	<button type="submit">Sign In</button>
+</form>
+
+<!-- using that token access some resource -->
+<button (click)="getProducts()">Get Products</button>
